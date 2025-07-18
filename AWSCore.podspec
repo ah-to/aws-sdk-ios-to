@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author       = { 'Amazon Web Services' => 'amazonwebservices' }
   s.platform     = :ios, '12.0'
 
-  s.source       = { :git => 'https://github.com/aws-amplify/aws-sdk-ios.git',
+  s.source       = { :git => 'https://github.com/ah-to/aws-sdk-ios-to.git',
                      :tag => s.version}
 
   s.frameworks   = 'CoreGraphics', 'UIKit', 'Foundation', 'SystemConfiguration', 'Security'
