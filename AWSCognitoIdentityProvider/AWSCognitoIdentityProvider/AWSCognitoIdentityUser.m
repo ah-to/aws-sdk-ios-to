@@ -378,7 +378,6 @@ static const NSString * AWSCognitoIdentityUserUserAttributePrefix = @"userAttrib
         AWSCognitoIdentityProviderRespondToAuthChallengeResponse * authenticateResult = task.result;
         AWSCognitoIdentityProviderAuthenticationResultType * authResult = task.result.authenticationResult;
         AWSCognitoIdentityProviderChallengeNameType nextChallenge = authenticateResult.challengeName;
-        NSLog(@"::::authenticateResult: %@", authenticateResult);
 
         AWSCognitoIdentityUserSession * session = nil;
         //No more challenges we have a session

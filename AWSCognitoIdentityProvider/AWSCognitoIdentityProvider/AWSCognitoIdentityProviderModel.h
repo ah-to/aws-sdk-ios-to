@@ -116,7 +116,6 @@ typedef NS_ENUM(NSInteger, AWSCognitoIdentityProviderChallengeName) {
 typedef NS_ENUM(NSInteger, AWSCognitoIdentityProviderChallengeNameType) {
     AWSCognitoIdentityProviderChallengeNameTypeUnknown,
     AWSCognitoIdentityProviderChallengeNameTypeSmsMfa,
-    AWSCognitoIdentityProviderChallengeNameTypeEmailOtp,
     AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa,
     AWSCognitoIdentityProviderChallengeNameTypeSelectMfaType,
     AWSCognitoIdentityProviderChallengeNameTypeMfaSetup,

@@ -661,9 +661,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         if ([value caseInsensitiveCompare:@"SMS_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSmsMfa);
         }
-        if ([value caseInsensitiveCompare:@"EMAIL_OTP"] == NSOrderedSame) {
-            return @(AWSCognitoIdentityProviderChallengeNameTypeEmailOtp);
-        }
         if ([value caseInsensitiveCompare:@"SOFTWARE_TOKEN_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa);
         }
@@ -696,8 +693,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         switch ([value integerValue]) {
             case AWSCognitoIdentityProviderChallengeNameTypeSmsMfa:
                 return @"SMS_MFA";
-            case AWSCognitoIdentityProviderChallengeNameTypeEmailOtp:
-                return @"EMAIL_OTP";
             case AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa:
                 return @"SOFTWARE_TOKEN_MFA";
             case AWSCognitoIdentityProviderChallengeNameTypeSelectMfaType:
@@ -932,9 +927,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         if ([value caseInsensitiveCompare:@"SMS_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSmsMfa);
         }
-        if ([value caseInsensitiveCompare:@"EMAIL_OTP"] == NSOrderedSame) {
-            return @(AWSCognitoIdentityProviderChallengeNameTypeEmailOtp);
-        }
         if ([value caseInsensitiveCompare:@"SOFTWARE_TOKEN_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa);
         }
@@ -967,8 +959,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         switch ([value integerValue]) {
             case AWSCognitoIdentityProviderChallengeNameTypeSmsMfa:
                 return @"SMS_MFA";
-            case AWSCognitoIdentityProviderChallengeNameTypeEmailOtp:
-                return @"EMAIL_OTP";
             case AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa:
                 return @"SOFTWARE_TOKEN_MFA";
             case AWSCognitoIdentityProviderChallengeNameTypeSelectMfaType:
@@ -1023,9 +1013,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         if ([value caseInsensitiveCompare:@"SMS_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSmsMfa);
         }
-        if ([value caseInsensitiveCompare:@"EMAIL_OTP"] == NSOrderedSame) {
-            return @(AWSCognitoIdentityProviderChallengeNameTypeEmailOtp);
-        }
         if ([value caseInsensitiveCompare:@"SOFTWARE_TOKEN_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa);
         }
@@ -1058,8 +1045,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         switch ([value integerValue]) {
             case AWSCognitoIdentityProviderChallengeNameTypeSmsMfa:
                 return @"SMS_MFA";
-            case AWSCognitoIdentityProviderChallengeNameTypeEmailOtp:
-                return @"EMAIL_OTP";
             case AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa:
                 return @"SOFTWARE_TOKEN_MFA";
             case AWSCognitoIdentityProviderChallengeNameTypeSelectMfaType:
@@ -3705,9 +3690,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         if ([value caseInsensitiveCompare:@"SMS_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSmsMfa);
         }
-        if ([value caseInsensitiveCompare:@"EMAIL_OTP"] == NSOrderedSame) {
-            return @(AWSCognitoIdentityProviderChallengeNameTypeEmailOtp);
-        }
         if ([value caseInsensitiveCompare:@"SOFTWARE_TOKEN_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa);
         }
@@ -3740,8 +3722,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         switch ([value integerValue]) {
             case AWSCognitoIdentityProviderChallengeNameTypeSmsMfa:
                 return @"SMS_MFA";
-            case AWSCognitoIdentityProviderChallengeNameTypeEmailOtp:
-                return @"EMAIL_OTP";
             case AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa:
                 return @"SOFTWARE_TOKEN_MFA";
             case AWSCognitoIdentityProviderChallengeNameTypeSelectMfaType:
@@ -4646,9 +4626,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         if ([value caseInsensitiveCompare:@"SMS_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSmsMfa);
         }
-        if ([value caseInsensitiveCompare:@"EMAIL_OTP"] == NSOrderedSame) {
-            return @(AWSCognitoIdentityProviderChallengeNameTypeEmailOtp);
-        }
         if ([value caseInsensitiveCompare:@"SOFTWARE_TOKEN_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa);
         }
@@ -4681,8 +4658,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         switch ([value integerValue]) {
             case AWSCognitoIdentityProviderChallengeNameTypeSmsMfa:
                 return @"SMS_MFA";
-            case AWSCognitoIdentityProviderChallengeNameTypeEmailOtp:
-                return @"EMAIL_OTP";
             case AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa:
                 return @"SOFTWARE_TOKEN_MFA";
             case AWSCognitoIdentityProviderChallengeNameTypeSelectMfaType:
@@ -4737,9 +4712,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         if ([value caseInsensitiveCompare:@"SMS_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSmsMfa);
         }
-        if ([value caseInsensitiveCompare:@"EMAIL_OTP"] == NSOrderedSame) {
-            return @(AWSCognitoIdentityProviderChallengeNameTypeEmailOtp);
-        }
         if ([value caseInsensitiveCompare:@"SOFTWARE_TOKEN_MFA"] == NSOrderedSame) {
             return @(AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa);
         }
@@ -4772,8 +4744,6 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
         switch ([value integerValue]) {
             case AWSCognitoIdentityProviderChallengeNameTypeSmsMfa:
                 return @"SMS_MFA";
-            case AWSCognitoIdentityProviderChallengeNameTypeEmailOtp:
-                return @"EMAIL_OTP";
             case AWSCognitoIdentityProviderChallengeNameTypeSoftwareTokenMfa:
                 return @"SOFTWARE_TOKEN_MFA";
             case AWSCognitoIdentityProviderChallengeNameTypeSelectMfaType:

@@ -1,9 +1,0 @@
-codecov:
-  branch: main
-
-coverage:
-  status:
-    patch: off
-    project:
-      default:
-        threshold: 1%
