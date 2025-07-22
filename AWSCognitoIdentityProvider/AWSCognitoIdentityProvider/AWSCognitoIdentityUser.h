@@ -350,6 +350,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) AWSCognitoIdentityUserMfaType* _Nullable smsMfa;
 @property (nonatomic, strong) AWSCognitoIdentityUserMfaType* _Nullable softwareTokenMfa;
+@property (nonatomic, strong) AWSCognitoIdentityUserMfaType* _Nullable emailOtp;
 
 @end
 
