@@ -1392,7 +1392,7 @@ static const NSString * AWSCognitoIdentityUserUserAttributePrefix = @"userAttrib
         AWSCognitoIdentityProviderEmailOtpSettingsType* emailOtp = [AWSCognitoIdentityProviderEmailOtpSettingsType new];
         emailOtp.enabled = [NSNumber numberWithBool:settings.emailOtp.enabled];
         emailOtp.preferredMfa = [NSNumber numberWithBool:settings.emailOtp.preferred];
-        request.emailOtp = emailOtp;
+        request.emailOtpSettings = emailOtp;
     }
     if(settings.softwareTokenMfa != nil){
         AWSCognitoIdentityProviderSoftwareTokenMfaSettingsType* softwareTokenMfaSettings = [AWSCognitoIdentityProviderSoftwareTokenMfaSettingsType new];
