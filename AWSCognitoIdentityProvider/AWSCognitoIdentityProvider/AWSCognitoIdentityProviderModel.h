@@ -5040,8 +5040,6 @@ typedef NS_ENUM(NSInteger, AWSCognitoIdentityProviderVerifySoftwareTokenResponse
  */
 @interface AWSCognitoIdentityProviderSMSMfaSettingsType : AWSModel
 
-/**email mfa */
-@interface AWSCognitoIdentityProviderEmailOtpSettingsType: AWSModel 
 
 /**
  <p>Specifies whether SMS text message MFA is activated. If an MFA type is activated for a user, the user will be prompted for MFA during all sign-in attempts, unless device tracking is turned on and the device has been trusted.</p>
@@ -5053,6 +5051,12 @@ typedef NS_ENUM(NSInteger, AWSCognitoIdentityProviderVerifySoftwareTokenResponse
  */
 @property (nonatomic, strong) NSNumber * _Nullable preferredMfa;
 
+@end
+
+/**email mfa */
+@interface AWSCognitoIdentityProviderEmailOtpSettingsType: AWSModel 
+@property (nonatomic, strong) NSNumber * _Nullable enabled;
+@property (nonatomic, strong) NSNumber * _Nullable preferredMfa;
 @end
 
 /**
