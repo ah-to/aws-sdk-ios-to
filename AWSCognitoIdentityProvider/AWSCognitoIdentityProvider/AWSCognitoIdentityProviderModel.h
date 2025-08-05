@@ -480,6 +480,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoIdentityProviderVerifySoftwareTokenResponse
 @class AWSCognitoIdentityProviderDeviceType;
 @class AWSCognitoIdentityProviderDomainDescriptionType;
 @class AWSCognitoIdentityProviderEmailConfigurationType;
+@class AWSCognitoIdentityProviderEmailOtpSettingsType;
 @class AWSCognitoIdentityProviderEventContextDataType;
 @class AWSCognitoIdentityProviderEventFeedbackType;
 @class AWSCognitoIdentityProviderEventRiskType;
@@ -1519,6 +1520,11 @@ typedef NS_ENUM(NSInteger, AWSCognitoIdentityProviderVerifySoftwareTokenResponse
  <p>The SMS text message MFA settings.</p>
  */
 @property (nonatomic, strong) AWSCognitoIdentityProviderSMSMfaSettingsType * _Nullable SMSMfaSettings;
+
+/**
+ <p>The email otp message MFA settings.</p>
+ */
+@property (nonatomic, strong) AWSCognitoIdentityProviderEmailOtpSettingsType * _Nullable emailOtpSettings;
 
 /**
  <p>The time-based one-time password software token MFA settings.</p>
@@ -5034,6 +5040,8 @@ typedef NS_ENUM(NSInteger, AWSCognitoIdentityProviderVerifySoftwareTokenResponse
  */
 @interface AWSCognitoIdentityProviderSMSMfaSettingsType : AWSModel
 
+/**email mfa */
+@interface AWSCognitoIdentityProviderEmailOtpSettingsType: AWSModel 
 
 /**
  <p>Specifies whether SMS text message MFA is activated. If an MFA type is activated for a user, the user will be prompted for MFA during all sign-in attempts, unless device tracking is turned on and the device has been trusted.</p>

@@ -1389,7 +1389,7 @@ static const NSString * AWSCognitoIdentityUserUserAttributePrefix = @"userAttrib
         request.SMSMfaSettings = smsMfaSettings;
     }
     if(settings.emailOtp != nil){
-        AWSCognitoIdentityProviderSMSMfaSettingsType* emailOtp = [AWSCognitoIdentityProviderSMSMfaSettingsType new];
+        AWSCognitoIdentityProviderEmailOtpSettingsType* emailOtp = [AWSCognitoIdentityProviderEmailOtpSettingsType new];
         emailOtp.enabled = [NSNumber numberWithBool:settings.emailOtp.enabled];
         emailOtp.preferredMfa = [NSNumber numberWithBool:settings.emailOtp.preferred];
         request.emailOtp = emailOtp;

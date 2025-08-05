@@ -1095,6 +1095,7 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
 	return @{
              @"SMSMfaSettings" : @"SMSMfaSettings",
+             @"emailOtpSettings" : @"EmailOtpSettings",
              @"softwareTokenMfaSettings" : @"SoftwareTokenMfaSettings",
              @"userPoolId" : @"UserPoolId",
              @"username" : @"Username",
@@ -1103,6 +1104,10 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
 
 + (NSValueTransformer *)SMSMfaSettingsJSONTransformer {
     return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSCognitoIdentityProviderSMSMfaSettingsType class]];
+}
+
++ (NSValueTransformer *)emailOtpSettingsJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSCognitoIdentityProviderEmailOtpSettingsType class]];
 }
 
 + (NSValueTransformer *)softwareTokenMfaSettingsJSONTransformer {
@@ -4893,6 +4898,21 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
 
 @end
 
+@implementation AWSCognitoIdentityProviderEmailOtpSettingsType
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"enabled" : @"Enabled",
+             @"preferredMfa" : @"PreferredMfa",
+             };
+}
+
+@end
+
 @implementation AWSCognitoIdentityProviderSchemaAttributeType
 
 + (BOOL)supportsSecureCoding {
@@ -5089,6 +5109,10 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
 
 + (NSValueTransformer *)SMSMfaSettingsJSONTransformer {
     return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSCognitoIdentityProviderSMSMfaSettingsType class]];
+}
+
++ (NSValueTransformer *)emailOtpSettingsJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSCognitoIdentityProviderEmailOtpSettingsType class]];
 }
 
 + (NSValueTransformer *)softwareTokenMfaSettingsJSONTransformer {
