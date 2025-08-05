@@ -5082,6 +5082,7 @@ NSString *const AWSCognitoIdentityProviderErrorDomain = @"com.amazonaws.AWSCogni
 	return @{
              @"accessToken" : @"AccessToken",
              @"SMSMfaSettings" : @"SMSMfaSettings",
+             @"emailOtpSettings" : @"EmailOtpSettings" //TODO: Correct capitalization ?
              @"softwareTokenMfaSettings" : @"SoftwareTokenMfaSettings",
              };
 }
