@@ -1388,6 +1388,12 @@ static const NSString * AWSCognitoIdentityUserUserAttributePrefix = @"userAttrib
         smsMfaSettings.preferredMfa = [NSNumber numberWithBool:settings.smsMfa.preferred];
         request.SMSMfaSettings = smsMfaSettings;
     }
+    if(settings.emailOtp != nil){
+        AWSCognitoIdentityProviderSMSMfaSettingsType* emailOtp = [AWSCognitoIdentityProviderSMSMfaSettingsType new];
+        emailOtp.enabled = [NSNumber numberWithBool:settings.emailOtp.enabled];
+        emailOtp.preferredMfa = [NSNumber numberWithBool:settings.emailOtp.preferred];
+        request.emailOtp = emailOtp;
+    }
     if(settings.softwareTokenMfa != nil){
         AWSCognitoIdentityProviderSoftwareTokenMfaSettingsType* softwareTokenMfaSettings = [AWSCognitoIdentityProviderSoftwareTokenMfaSettingsType new];
         softwareTokenMfaSettings.enabled = [NSNumber numberWithBool:settings.softwareTokenMfa.enabled];
