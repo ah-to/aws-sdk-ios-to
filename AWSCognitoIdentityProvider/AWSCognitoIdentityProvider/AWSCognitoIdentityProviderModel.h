@@ -5237,6 +5237,11 @@ typedef NS_ENUM(NSInteger, AWSCognitoIdentityProviderVerifySoftwareTokenResponse
 @property (nonatomic, strong) AWSCognitoIdentityProviderSMSMfaSettingsType * _Nullable SMSMfaSettings;
 
 /**
+ <p>email mfa
+ */
+@property (nonatomic, strong) AWSCognitoIdentityProviderEmailOtpSettingsType * _Nullable emailOtpSettings;
+
+/**
  <p>The time-based one-time password (TOTP) software token MFA settings.</p>
  */
 @property (nonatomic, strong) AWSCognitoIdentityProviderSoftwareTokenMfaSettingsType * _Nullable softwareTokenMfaSettings;
